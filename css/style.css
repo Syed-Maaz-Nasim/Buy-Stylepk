@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Navigation Bar login form  */
+
+/* Naviagation Bar:logo and Image */
+/* #logo {
+  margin: 10px 34px;
+}*/
+
+#logo img {
+  height: 55px;
+  /* margin: 3px 6px; */
+}
+
+/* Navigation Bar: list styling */
+/* #navbar{
+    position: relative;
+} */
+
+#navbar ul {
+  display: flex;
+  font-family: "Bree Serif", serif;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 3px 200px; */
+  align-items: center;
+  justify-content: center;
+  height: 578px;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url(../img/bg.jpg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#home h1 {
+  color: black;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+.h-welcome {
+  text-align: center;
+  font-size: 50px;
+}
+.h-para {
+  width: 60%;
+  height: auto;
+  padding-top: 30px;
+  font-size: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.h-btn {
+  border: 2px solid black;
+  background-color: burlywood;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px 0 20px;
+  margin: 50px 0 0px 0;
+}
+
+/* Services Section  */
+.services-container {
+  padding-top: 100px;
+}
+
+.h-services {
+  text-align: center;
+  font-size: 50px;
+}
+.box a{
+  text-decoration: none;
+  color:black;
+}
+#services {
+  /* margin: 34px; */
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#services .box {
+  border: 2px solid rgb(226, 152, 55);
+  width: 400px;
+  height: 300px;
+  margin: 0px 50px 0px 50px;
+  border-radius: 28px;
+  background-color: rgb(236 226 226);
+  /* justify-content: center; */
+}
+#services .box img {
+  padding-top: 25px;
+  height: 180px;
+  margin: auto;
+  display: block;
+}
+
+/* Clients Section  */
+
+#client-section {
+  padding-top: 100px;
+  width: 100%;
+  height: 344px;
+}
+.client-heading {
+  text-align: center;
+  font-size: 50px;
+}
+.clients {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clients table tr td {
+  width: 20%;
+}
+.clients img {
+  text-align: center;
+}
+/* .client-item {
+  padding: 15px;
+} */
+
+/* Contact Us Section  */
+#contact {
+  /* position: relative; */
+  padding-top: 100px;
+  margin-top: 100px;
+
+}
+
+/* #contact::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  opacity: 0.7;
+} */
+.contact-heading {
+  text-align: center;
+  font-size: 50px;
+  color:white;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+}
+
+footer {
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: black;
+  color: white;
+  padding: 0px 9px 0px 20px;
+  font-size: 20px;
+}
+
+/* Utility Classes */
+
+.h-secondary {
+  font-size: 2.5rem;
+  padding: 12px;
+}
+/* .btn {
+  border: 2px solid black;
+  background-color: burlywood;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px 0 20px;
+  margin: 50px 0 0px 0;
+  /* cursor: pointer;
+} */
+
+.btn:hover {
+  color: black;
+  background-color: rgb(219, 221, 199);
+}
+
+.center {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* ************************************** MEN and Women CLOTHING **************************************** */
+
+.latest {
+  padding: 50px 100px;
+}
+
+.product-intro {
+  text-align: center;
+}
+
+.product-intro h1 {
+  color: red;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+/* .card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin: 4rem 0px;
+}
+.card-container .card {
+  padding: 0.8rem;
+}
+.card img {
+  width: 18%;
+  margin: 10px 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover img,
+.card:hover h1 {
+  width: 25%;
+} */
+
+/* .card button {
+  border: 2px solid black;
+  background-color: burlywood;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 6px 20px;
+  margin: 17px 20px;
+  cursor: pointer;
+} */
+
+/* .card button:hover {
+  color: black;
+  background-color: rgb(219, 221, 199);
+}
+
+.card p {
+  margin: 10px 20px;
+  font-size: 1.5rem;
+} */
+/* .card h1 {
+  margin: 10px 20px;
+} */
+
+/* ************************************** MEDIA QUERY ********************************************** */
+
+@media only screen and (max-width: 1220px) 
+{
+    /* Home Section  */
+    #home{
+        height: 370px;
+        /* padding: 3px 28px; */
+    }
+    #home::before{
+        height: 480px;
+    }
+    #home p{
+        font-size: 13px;
+    }
+
+    /* Navigation */
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul li a{
+        font-size: 1rem;
+        /* padding: 0px 7px;
+        padding-bottom: 8px; */
+    }
+    /* Services  */
+  #services-container {
+    padding-top: 100px;
+  }
+  
+  #services {
+    flex-direction: column;
+  }
+  /* #services .box{
+    padding: 14px;
+    margin: 2px 15px;
+    margin-bottom: 20px; */
+  }
+    /* Clients Section  */
+    #clients{
+        flex-wrap: wrap;
+    }
+    #clients img{
+        width: 66px;
+        /* padding: 0px 56px; */
+        height: auto;
+    }
+
+    /* Contact Us section  */
+
+
+    /* Footer  */
+
+    /* Utility-Classes */
+    /* .h-primary{
+        font-size: 26px;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 4px 8px;
+    } */
+
+
+/* *********************************Men*************** */
+.product-intro{
+  flex-direction: column;
+}
+/* .card-container img{
+  width: 100%;
+} */
